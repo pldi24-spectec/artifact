@@ -1,0 +1,13 @@
+*~
+*.tmproj
+*.pyc
+_build
+_output
+swp
+watsup
+spectec/spec-bugs/type-1
+spectec/spec-bugs/type-2
+spectec/spec-bugs/type-3
+spectec/spec-bugs/semantics-1
+spectec/spec-bugs/semantics-2
+spectec/spec-bugs/semantics-3
