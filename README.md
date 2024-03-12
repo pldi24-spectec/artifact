@@ -10,7 +10,7 @@ We support two ways to use SpecTec:
 * Building from source
 
 ### Using a docker container
-We provide a Docker container with SpecTec and its dependencies. You can install the docker by following the instruction in https://docs.docker.com/get-started/ and download our docker image with the following command:
+We provide a Docker container with SpecTec and its dependencies. You can learn about the docker by following the instruction in https://docs.docker.com/get-started/ or https://docs.docker.com/get-started/. Install docker and download our docker image with the following command:
 > WARNING: The docker image is 6GB large. Thus, be patient when you download it, and please assign more than 6GB of memory for the docker engine.
 ```
 $ docker pull pldi24spectec/artifact
@@ -19,7 +19,7 @@ $ docker run --name artifact -it --rm pldi24spectec/artifact
 
 ### Building from source
 
-* You will need `ocaml` installed with `dune`, `menhir`, and `mdx`.
+* You will need `ocaml` version 5.0.0 or higher installed with `dune`, `menhir`, and `mdx`.
 
 * Have `python3` version 3.7 or higher with `pip3` installed.
 
@@ -110,6 +110,8 @@ ln -f _build/default/src/exe-watsup/main.exe ./watsup
 
 Total [23751/23751] (100.00%; Normalized 100.00%)
 ```
+
+> **_NOTE:_**  If the RAM size is insufficient, certain tests, particularly those involving memory instructions, might fail. It's advisable to utilize RAM with a capacity of at least 16GB or more.
 
 ### 2) Bug prevention
 
